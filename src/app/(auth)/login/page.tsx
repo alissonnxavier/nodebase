@@ -1,14 +1,12 @@
 import { LoginForm } from '@/features/auth/components/login-form';
 import { requireAuth } from '@/lib/auth-utils';
-import React from 'react'
 
-export const Page = async() => {
+
+export const Page = async () => {
     await requireAuth();
 
     return (
-        <div>
-            <LoginForm />
-        </div>
+        <LoginForm />
     )
 };
 

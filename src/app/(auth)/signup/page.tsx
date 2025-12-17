@@ -6,9 +6,7 @@ export const Page = async () => {
     await requireAuth();
 
     return (
-        <div>
-            <RegisterForm />
-        </div>
+        <RegisterForm />
     )
 };
 
